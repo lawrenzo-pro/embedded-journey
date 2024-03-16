@@ -7,13 +7,10 @@ use panic_halt as _;
 fn main() -> ! {
     let dp = arduino_hal::Peripherals::take().unwrap();
     let pins = arduino_hal::pins!(dp);
-    let mut led = pins.d8.into_output();
+    let mut led = pins.d7.into_output();
 
     loop {
         led.toggle();
         arduino_hal::delay_ms(1000);
     }
-}
-fn blinky (pin: arduino_hal::pins){
-
 }
