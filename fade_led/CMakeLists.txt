@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-set(PICO_SDK_PATH "/usr/share/pico-sdk")
+set(PICO_SDK_PATH "/home/lawrence/pico-sdk")
 set(PICO_BOARD "pico_w")
 include(pico_sdk_import.cmake)
 project(fade_led C CXX ASM)
